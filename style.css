@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0c0c0c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.calculator {
+  height: auto;
+  width: auto;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  border: 0px solid red;
+  color: #fff;
+}
+
+.display {
+  height: 160px;
+  width: 100%;
+  font-size: 3.7rem;
+  padding-top: 116px;
+  padding-right: 40px;
+  text-align: right;
+}
+
+
+.buttons {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 4fr);
+  grid-gap: 6px;
+  transform: scale(0.8);
+}
+
+#two_space {
+  color: #fff;
+  background: #505050;
+  grid-column: 1 / span 2;
+}
+
+.buttons button {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+
+.operator {
+  background-color: #f9c5c5;
+}
+
+.clear,
+.negative,
+.percentage {
+  background-color: #e9e9e9;
+}
+
+#equals {
+  background-color: #c5f9c5;
+}
+
+
+
+.number {
+  color: rebeccapurple;
+}
+
+
+
+
+/* COLORS */
+
+#dark_gray {
+  color: #fff;
+  background: #505050;
+}
+
+#dark_orange {
+  color: #fff;
+  background: #ff9500;
+  font-size: 2.4rem;
+}
+
+#light_gray {
+  color: #0c0c0c;
+  background: #d4d4d2;
+}
+
+.buttons button {
+  border-radius: 999px;
+  height: 70px;
+  width: 70px;
+  font-size: 1.5em;
+}
+
+#two_space {
+  grid-column: 1 / span 2;
+  height: 100;
+  width: 140px;
+  text-align: left;
+  padding: 22px;
+}
+
+
+.frame-bg {
+  background-image: url('https://o.remove.bg/downloads/d65633be-0d90-4893-9f5f-69107d815af7/746-7467422_iphone-xs-gold-png-image-free-download-searchpng-removebg-preview.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 750px;
+  margin-left: -11.5px;
+}
+
+
+#line {
+  position: relative;
+  top: -17.5px;
+  margin: 0 auto;
+  height: 3px;
+  width: 99px;
+  border-radius: 999px;
+  background: white;
+}
